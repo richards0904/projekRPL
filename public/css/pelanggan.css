@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Poppins','Segoe UI',Tahoma,sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    width : 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.img-curve{
+    border-radius: 10px;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+li a{
+    color: maroon;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.tombol {
+    color: maroon;
+    text-decoration: none;
+}
+
+.tombol:hover {
+    color: rgb(255, 0, 0);
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background-color: maroon;
+    color: aliceblue ;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color: aliceblue ;
+    background-color: rgb(255, 0, 0);
+}
+button:disabled,
+button[disabled=disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+h2{
+    color: maroon;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+h3{
+    font-size: 1,5rem;
+}
+
+.float-container{
+    position: relative;
+}
+
+.float-text{
+    position:absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+/* CSS Navbar */
+.logo{
+    border: 1px;
+    width: 5%;
+    float: left;
+}
+
+.menu{
+    line-height: 55px;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+/* CSS Beranda */
+.beranda{
+    background-image:url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20%;
+}
+
+.beranda .nampung{
+    font-size: 23px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+.nampung h1{
+    -webkit-text-stroke: 2px black;
+}
+
+/* CSS Tentang */
+.tentang{
+    width: 100%;
+    margin: 0%;
+    padding: 1%;
+    float: left;
+    background-color:#d1e8ea;
+    border-radius: 1%;
+}
+
+.gambarTentang{
+    width: 100%;
+}
+.gambarTentang img{
+    display: block;
+    margin: 1% auto;
+}
+
+/* .text{
+    text-align: center;
+} */
+
+.text h1{
+    font-size: 30px;
+    position: relative;
+}
+
+.text p{
+    font-size: 15px;
+    line-height: 30px;
+    margin: 30px;
+    max-width: 480;
+}
+
+/* CSS Cari produk */
+.cariProduk{
+    /* background-image:url(../image/logo.jpg); */
+    background-color: #d1e8ea;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.cariProduk input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5%;
+}
+
+/* CSS kategori */
+.kategori{
+    background-color: #F9FBE7;
+    padding: 3% 0;
+}
+
+.box-2{
+    width: 20%;
+    float: left;
+    margin: 2%;
+}
+
+/* CSS menu produk */
+.menuProduk{
+    background-color: #d1e8ea;
+    padding: 4% 0;
+}
+
+.menuProduk-box{
+    width: 46%;
+    margin: 1%;
+    margin-left: 3%;
+    padding: 2%;
+    float: left;
+    background-color: #F9FBE7;
+    border-radius: 1%;
+}
+
+.menuProduk-img{
+    width: 30%;
+    float: left;
+}
+
+.menuProduk-desc{
+    width: 65%;
+    float: left;
+    margin-left: 3%;
+}
+
+.hargaProduk{
+    font-size: 1,2rem;
+    margin: 2% 0;
+}
+
+.detailProduk{
+    font-size: 1rem;
+    color:  rgb(147, 147, 147);
+}
+
+/* CSS Sosmed */
+.sosmed{
+    background-color: #F9FBE7;
+}
+
+.sosmed ul{
+    list-style-type: none;
+}
+
+.sosmed ul li{
+    display: inline;
+    padding: 1;
+    margin: 1%;
+}
+
+/* CSS Footer */
+.footer{
+    background-color: #d1e8ea;
+}
+
+/* CSS untuk di handphone */
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .menu ul{
+        text-align: center;
+    }
+
+    .cariProduk input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .cariProduk{
+        padding: 10% 0;
+    }
+
+    .kategori{
+        padding: 20%;
+    }
+
+    h2{
+        margin-bottom: 10%;
+    }
+
+    .box-2{
+        width: 90%;
+        margin: 4% auto;
+    }
+
+    .menuProduk{
+        padding: 20% 0;
+    }
+
+    .menuProduk-box{
+        width: 80%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .sosmed{
+        padding: 5% 0;
+    }
+}
